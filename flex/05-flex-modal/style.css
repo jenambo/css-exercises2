@@ -16,10 +16,28 @@ body {
 }
 
 .modal {
+  padding: 16px;
   background: white;
   width: 480px;
   border-radius: 10px;
   box-shadow: 2px 4px 16px rgba(0,0,0,.2);
+  display: flex;
+}
+
+.centerContent {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  padding: 2px;
+  gap: 16px;
+}
+
+.right{
+  padding: 8px;
+}
+
+.left {
+  padding: 8px;
 }
 
 .icon {
@@ -35,6 +53,10 @@ body {
   justify-content: center;
 }
 
+.header {
+  font-weight: bold;
+  font-size: 20px;
+}
 .close-button {
   background: #eee;
   border-radius: 50%;
