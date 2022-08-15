@@ -4,25 +4,70 @@ body {
   min-height: 100vh;
 }
 
+.content, .middleContent, .cardContent {
+  display: flex;
+
+}
+
+.content {
+  flex-direction: column;
+}
+
+.middleContent {
+  
+}
+
+.cardContent {
+  justify-content: space-between;
+  margin: 0;
+  padding: 10px;
+  gap: 5px;
+  flex: 1;
+  flex-wrap: wrap;
+}
+
 .header {
+  font-size: 32px;
+  font-weight: 900;
   height: 72px;
   background: darkmagenta;
   color: white;
+  display: flex;
+  align-items: center;
+  padding: 16px;
 }
 
 .footer {
   height: 72px;
   background: #eee;
   color: darkmagenta;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .sidebar {
   width: 300px;
   background: royalblue;
+  display: flex;
+  flex-shrink: 0;
 }
 
+a:link, a:visited { 
+  text-decoration: none; 
+  color: white;
+}
+
+ul { 
+  list-style-type: none;
+}
+
+
 .card {
+  max-width: 250px;
+  height: 300px; 
   border: 1px solid #eee;
   box-shadow: 2px 4px 16px rgba(0,0,0,.06);
   border-radius: 4px;
+  padding: 5px;
 }
